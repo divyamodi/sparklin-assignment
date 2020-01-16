@@ -113,7 +113,6 @@ a:hover{
     background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-    background-attachment: fixed;
 }
 .mt-100{
     margin-top: 100px;
