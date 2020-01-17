@@ -16,6 +16,16 @@
         transition: 50ms ease;
         background: transparent;
     }
+    .header.scrolled {
+        background: var(--primary-color);
+        height: 75px;
+    }
+    .menu-logo{
+        position: absolute;
+    }
+    #menu{
+        width: 300px;
+    }
     .h-100vh{
         height: 100vh;
     }
@@ -57,6 +67,9 @@
 }
 
 @media all and (max-width: 767px) {
+    .navbar-toggler{
+        display: none;
+    }
     .header .navbar-nav .nav-link {
         color: var(--tertiary-color);
         text-align: right;
@@ -71,17 +84,13 @@
     .header.scrolled .navbar-collapse{
         background: rgba(0, 30, 65, 1);
     }
-    .navbar-toggler{
-        margin-right: 20px;
-    }
+
     .logo{
         z-index: 9;
         width: 100px;
         position: absolute;
     }
-    .navbar{
-        padding: 10px;
-    }
+
     .h-100vh{
         height: 100vh;
     }

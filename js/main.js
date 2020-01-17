@@ -1,6 +1,5 @@
 
 
-new WOW().init();
 
 $(document).ready(function(){
 
@@ -8,6 +7,16 @@ $(document).ready(function(){
         $('.header').toggleClass('scrolled', $(this).scrollTop() > 50);
     });
 
+
+});
+$(document).ready(function() {
+  $("#menu li").hover(
+    function() {
+      $(this).find('ul').slideDown();
+    },
+    function() {
+      $(this).find('ul').slideUp();
+    });
 });
 
 $(document).ready(function(){
